@@ -1,65 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<!-- HEADER -->
-<div style="text-align:center; padding:100px 20px 40px;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h1 style="
-    font-family:'Bebas Neue', sans-serif;
-    font-size:80px;
-    letter-spacing:6px;
-    margin:0;
-    color:#e8c97e;
-  ">
-    PRODUCTION
-  </h1>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
-  <p style="
-    font-family:'Playfair Display', serif;
-    font-style:italic;
-    font-size:20px;
-    color:#a8a8a8;
-    margin-top:14px;
-    letter-spacing:0.5px;
-  ">
-  </p>
+  <title>Production</title>
 
-</div></head>
-<body style="background:black; color:white; font-family:Arial; padding:40px;">
-<h1 style="text-align:center; margin:40px 0;"></h1>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-<div style="width:100%;">
+    .header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
 
-  <!-- IMAGE 1 -->
-  <div style="margin:40px 0;">
-    <img src="production/1.png" style="width:100%; height:100vh; object-fit:cover;">
+    .header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(40px, 8vw, 80px);
+      letter-spacing: 6px;
+      margin: 0;
+      color: #e8c97e;
+    }
+
+    .gallery {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .image-container {
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto; /* KEY FIX: no cropping */
+      display: block;
+      border-radius: 12px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 60px 0;
+      color: #e8c97e;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    /* Optional: spacing adjustment for mobile */
+    @media (max-width: 768px) {
+      .image-container {
+        margin: 25px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>PRODUCTION</h1>
   </div>
 
-  <!-- IMAGE 2 -->
-  <div style="margin:40px 0;">
-    <img src="production/2.png" style="width:100%; height:100vh; object-fit:cover;">
+  <!-- GALLERY -->
+  <div class="gallery">
+
+    <div class="image-container">
+      <img src="production/1.png" alt="">
+    </div>
+
+    <div class="image-container">
+      <img src="production/2.png" alt="">
+    </div>
+
+    <div class="image-container">
+      <img src="production/3.png" alt="">
+    </div>
+
+    <div class="image-container">
+      <img src="production/4.png" alt="">
+    </div>
+
+    <div class="image-container">
+      <img src="production/5.png" alt="">
+    </div>
+
+    <div class="image-container">
+      <img src="production/6.png" alt="">
+    </div>
+
   </div>
 
-  <!-- IMAGE 3 -->
-  <div style="margin:40px 0;">
-    <img src="production/3.png" style="width:100%; height:100vh; object-fit:cover;">
-  </div>
-
-  <div style="margin:40px 0;">
-    <img src="production/4.png" style="width:100%; height:100vh; object-fit:cover;">
-  </div>
-
-  <div style="margin:40px 0;">
-    <img src="production/5.png" style="width:100%; height:100vh; object-fit:cover;">
-  </div>
-
-  <div style="margin:40px 0;">
-    <img src="production/6.png" style="width:100%; height:100vh; object-fit:cover;">
-  </div>
-
-</div>
-
-<a href="index.html">← Back to Portfolio</a>
+  <!-- BACK BUTTON -->
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
 
 </body>
 </html>
